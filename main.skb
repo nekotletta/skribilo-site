@@ -48,12 +48,12 @@
 ;;section could work as a div?
 ;;(section :class "hihi"  :number #f (author :name "nom1") (author :name "nom2") )
 
-:html-title [Hello world title]
+:html-title [Homepage]
 
 (section :class "sidelines" :number #f (p [aa]))
 
 (section :class "division" :number #f
-;;(p [Very simple ,(color :fg [red] [text])])
+
 (p :class "indented-p" [Welcome! This is a personal project for fun, attempting to build somewhat of a personal website in ,(skr [Skribilo]).
       I decided to use this framework, as I thought it would be very fun to see how much HTML I can get away with doing through ,(wiki/scheme [Scheme]). ])
 
@@ -68,7 +68,7 @@
 ;;(section :class "but" :number #f
 ;;(p [,(ref :url "f2.html" :class "but" :text "Okay but can i link another html file?")]))
 
-(chapter :class "chapter-title" :title [About] :number #f :file #f :ident "about"
+(chapter :class "chapter-title" :title [About Me] :number #f :file #f :ident "about"
       (section :number #f :class "chapter-contents" 
             (p [Hello!! I'm a software engineer who is very passionate about building tools to improve ,(wiki/ux [,(color :fg [#3c245c] [a user's experience])]) all throughout. 
                   I usually do ,(wiki/fullstack [,(color :fg [#3c245c]  [full-stack])]) projects, taking as many improvements as possible into consideration when developping them.])

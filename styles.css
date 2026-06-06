@@ -75,6 +75,11 @@ div.skribilo-body {
     padding-right: 10px;
     text-indent: 10px;
 }
+.centered-content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
 
 .division {
     padding: 0 15px !important;
@@ -165,7 +170,30 @@ div.skribilo-body {
   transform: scaleX(-1) !important;
 }
 
+.white-bg {
+  background-color: white !important;
+  /* /* width: auto !important; */
+  margin: auto !important;
+  /* height: 100% !important; */
+  /* padding: 1px !important; */
+
+  padding-left: 15px !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  border-radius: 10px !important;
+  color: #4d79b3 !important;
+}
+/* ------------------------------------------ */
+
 div.skribilo-ending {
   display: flex;
   justify-content: center;
+}
+
+/* --------------------------------------------- */
+
+@media (max-width: 600px) {
+  .sidelines, .inverted-img, .sidelines-p, .inverted-img-p {
+    background-image: none !important;
+  }
 }
