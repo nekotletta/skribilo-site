@@ -93,7 +93,7 @@ div.skribilo-body {
     overflow-x: hidden !important;
 }
 
-.sidelines, .inverted-img, .sidelines-p, .inverted-img-p {
+.sidelines, .inverted-img, .sidelines-p, .inverted-img-p, .sidelines-n, .inverted-img-n {
     margin: 0px !important;
     padding: 0px !important;
     height: 100vh !important;
@@ -219,6 +219,15 @@ div.skribilo-body {
   margin-top: 15% !important;
   overflow-y: scroll !important;
   transform: translateY(0) !important;
+}
+
+.sidelines-n, .inverted-img-n {
+  background-image: url("pencil.png") !important;
+  background-color: transparent !important;
+}
+
+.inverted-img-n {
+    transform: scaleX(-1) !important;
 }
 
 .align-date {

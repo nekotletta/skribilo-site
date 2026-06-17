@@ -8,12 +8,11 @@
                   (engine-custom-set! html 'html-navtabs-produce-css? #f)
 
                   ;;override css
-                  (engine-custom-set! html 'css "../styles.css")
-                  (engine-custom-set! html 'title-foreground "blue !important"))))
+                  (engine-custom-set! html 'css "../styles.css"))))
 
 (document :no-tabs #t
 
-(section :class "sidelines" :text [aaa] :number #f)
+(section :class "inverted-img-n" :text [aaa] :number #f)
 (section :class "journal-note" :number #f 
 
 ;;(section :number #f (p :class "invisible" [a]))
@@ -32,31 +31,36 @@
             (p :class "hide-text" [a])
             (p :class "hide-text" [a])
 
-            ;;(p [I want to talk a little bit more in depth on, as the title says, my experience in the building of this site so far.])
+            (p [I want to talk a little bit more in depth on, as the title says, my experience in the building of this site so far.
+            Off the bat, I myself don't really know Scheme, or Lisp in general; all I know is the bare basics of the language.])
 
-            (p [Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            (subsection :number #f :title [Thought process] 
+                  (p [I was introduced to skribilo about 3 weeks ago, which is a documentation framework, i.e., nothing to do with websites.
+                  Seeing that this was not built to create websites, I had the idea "how much can I get away with? "How many website-ish features can I build?"])
+                  
+                  (p [The first thing I decided to build was a pseudo button. And yes, I call it pseudo, because there's no <button> tag.
+                  Once I managed to get it to work (it worked more like the href attribute) I concluded that everything is possible to do with this framework, using no HTML whatsoever.])
+                  
+                  (p [Not only do I see this as a fun challange, but it also allows me to finally build my personal site, which is something I've been procrastinating on doing.
+                  Using a language I'm not familiar with, and a framework not intended for websites forces me to think outside of the box for the simplest things, that are taken for granted, which is really fun.]))
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            (subsection :number #f :title [Everything I've accomplished in this framework]
+                  (itemize (item [Buttons to redirect
+                              ,(itemize (item [A div with only a button]))])
+                           (item [One main column and two side ones])
+                           (item [Pseudo div's (there is <div> tag)])
+                           (item [Having different styles in every page])
+                           (item [Pseudo <br>, sort of, just a workaround])
+                  ))
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            (subsection :number #f :title [Things I still need to do, as of June 17th, 2026]
+                  (itemize (item [Adding images within divs (not background images)])
+                           (item [Update styles to work on mobile])
+                           (item [Figure out what else I can get away with in this framework])
+                  ))
+            
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.])
+            (p :class "hide-text" [a])
 
             ;;(section :class "white-bg" :number #f
                   ;;(subsection  :title "Profestocks | 2023" :number #f))
@@ -66,4 +70,4 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
      
 )
 
-(section :class "sidelines" :text [aaa] :number #f))
+(section :class "sidelines-n" :text [aaa] :number #f))
