@@ -70,16 +70,17 @@
 
 (chapter :class "chapter-title" :title [About Me] :number #f :file #f :ident "about"
       (section :number #f :class "chapter-contents" 
-            (p [Hello!! I'm a software engineer who is very passionate about building tools to improve ,(wiki/ux [,(color :fg [#3c245c] [a user's experience])]) all throughout. 
-                  I usually do ,(wiki/fullstack [,(color :fg [#3c245c]  [full-stack])]) projects, taking as many improvements as possible into consideration when developping them.])
-            (p [Something about stacks])))
+            (p [Hello!! My name is Adriana and I'm a software engineer who is very passionate about building tools to improve ,(wiki/ux [,(color :fg [#5800cd] [a user's experience])]) all throughout. 
+                  I usually do ,(wiki/fullstack [,(color :fg [#5800cd]  [full-stack])]) projects, taking as many improvements as possible into consideration when developing them.
+                  If there's something that could improve people's lives I'll make it.])
+            (p [])))
 
 (chapter :class "chapter-title" :title [Additional content] :number #f :file #f :ident "extra"
       (section  :number #f :class "chapter-contents" 
             (p [I have some additional content on my page])
             (section :number #f :class "nextto"
                   (p [,(ref :url "projects.html" :class "but" :text "Projects")])
-                  (p [,(ref :url "h2.html" :class "but" :text "CV")]))
+                  (p [,(ref :url "journal-main.html" :class "but" :text "CV")]))
             (section :number #f :class "nextto"
                   (p [,(ref :url "journal-main.html" :class "but" :text "Journal")]))))
 

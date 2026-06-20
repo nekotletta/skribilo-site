@@ -12,6 +12,7 @@
 
 (document :no-tabs #t
 
+:html-title [My experience building this site]
 (section :class "inverted-img-n" :text [aaa] :number #f)
 (section :class "journal-note" :number #f 
 
@@ -19,14 +20,14 @@
 
 (section :number #f :class "note-area"
 (subsubsection :class "invisible but-p-container note-button" :title "" :number #f :file #f :ident "go-back"
-      (p :class "goback-p" [,(ref :url "../journal-main.html" :text [,(color :fg [white] [To Journal])])]))
+      (p :class "goback-n" [,(ref :url "../journal-main.html" :text [,(color :fg [white] [To Journal])])]))
 
 (chapter :title [,(color :fg [black] [My experience building this site so far])] :number #f :file #f :ident "finished"
             
       (section :number #f :class "note-text"
             ;;(section :class "white-bg" :number #f
             ;;      (subsection  :title "Experience building this site" :number #f))
-            (p :class "align-date" [June 16, 2026])
+            (p :class "align-date" [June 18, 2026])
 
             (p :class "hide-text" [a])
             (p :class "hide-text" [a])
@@ -58,16 +59,18 @@
                            (item [Update styles to work on mobile])
                            (item [Figure out what else I can get away with in this framework])
                   ))
+
+            (subsection :number #f :title [Acknowledgements for inspirations]
+                  (p "BTW hello if any one of you guys ever sees this :]")
+                  (itemize (item [My boyfriend
+                                    ,(itemize (item [Introduced me to Skribilo in the first place.]))])
+                           (item [,(ref :url "https://matteing.com/" :text "Sergio's website")
+                                    ,(itemize (item [Very clean and simple website. This is what initially drew me to making my own personal website someday. It only took me about 1.5 years to finally commit to it.]))])
+                           (item [,(ref :url "https://doqmeat.com/" :text "Des' digital journal")
+                                    ,(itemize (item [Absolutely fun maximalist website, so many things to do it. This is what inspired to "do whatever I want" in this project. It is also the ,(ref :url "https://doqmeat.com/journal/" :text "reference for my journal").]))])
+                  ))
             
 
-            (p :class "hide-text" [a])
-
-            ;;(section :class "white-bg" :number #f
-                  ;;(subsection  :title "Profestocks | 2023" :number #f))
-            ;;(p [caballo 2])
-      )) )
-
-     
-)
+            (p :class "hide-text" [a])))))
 
 (section :class "sidelines-n" :text [aaa] :number #f))

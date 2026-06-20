@@ -37,32 +37,40 @@
       (ref :url (string-append "posts/" html-ref) :text text)
 )
 
-(document :title "Journal"
+(document :title [,(color :fg [#4c2708] [Journal])]
 
-(section :class "sidelines" :text [aaa] :number #f)
+(section :class "sidelines-j" :text [aaa] :number #f)
 
 (section :class "journal-base" :number #f :text [aa]
 
 (subsubsection :class "invisible but-p-container" :title "AA" :number #f :file #f :ident "go-back"
-      (p :class "goback-p" [,(ref :url "main.html" :text [,(color :fg [white] [Go back])])]))
+      (p :class "goback-j" [,(ref :url "main.html" :text [,(color :fg [white] [Go back])])]))
 
-(chapter :class "chapter-title" :title [,(color :fg [#6b99d5] [Coding])] :number #f :file #f :ident "finished"
+(p :class "indented-p" [,(color :fg [#4c2708] [Welcome to my journal! I intend to update this journal every once in a while.
+                        The posts will be divided based on the main topic in them, but I admit most will be about coding, or development in general.
+                        The topics can be found on the navbar at the top, or by scrolling through the site!] )])
+
+(chapter :class "chapter-title" :title [,(color :fg [#4c2708] [Pinned])] :number #f :file #f :ident "pinned"
       ;;(section :number #f (p :class "centered-content" [List of projects that I have finished developping.]))
             
       (section  :number #f
             (section :class "white-bg" :number #f
-                  (subsection :number #f (p [,(go-to-post "this-site.html" [This site])])))
-            ;;(p [caballo])
+                  (subsection :number #f :title [,(go-to-post "this-site.html" [,(color :fg [#4c2708] [Experience building this site])])]))
+      ))
 
-            ;;(p :class "hide-text" [a])
-
+(chapter :class "chapter-title" :title [,(color :fg [#4c2708] [Coding])] :number #f :file #f :ident "coding"
+      ;;(section :number #f (p :class "centered-content" [List of projects that I have finished developping.]))
+            
+      (section  :number #f
             ;;(section :class "white-bg" :number #f
-                  ;;(subsection  :title "Profestocks | 2023" :number #f))
-            ;;(p [caballo 2])
+                  ;;(subsection :number #f :title [,(go-to-post "this-site.html" [,(color :fg [#4c2708] [Experience building this site])])]))
+
+            (section :class "white-bg" :number #f
+                  (subsection :number #f :title [,(go-to-post "post-template.html" [,(color :fg [#4c2708] [Coding with impostor syndrome])])]))
       ))
 
      
 )
 
-(section :class "sidelines" :text [aaa] :number #f)
+(section :class "sidelines-j" :text [aaa] :number #f)
 )

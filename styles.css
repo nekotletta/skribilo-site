@@ -1,5 +1,5 @@
 
-.but, .goback-p {
+.but, .goback-p, .goback-n, .goback-j {
     background-color: #3c245c;
     border-radius: 10px;
     /* text-decoration: none !important; */
@@ -93,7 +93,7 @@ div.skribilo-body {
     overflow-x: hidden !important;
 }
 
-.sidelines, .inverted-img, .sidelines-p, .inverted-img-p, .sidelines-n, .inverted-img-n {
+.sidelines, .inverted-img, .sidelines-p, .inverted-img-p, .sidelines-n, .inverted-img-n, .sidelines-j {
     margin: 0px !important;
     padding: 0px !important;
     height: 100vh !important;
@@ -146,22 +146,20 @@ div.skribilo-body {
 
 .projects-contents {
   color: blue;
-  background-color: rgba(153, 197, 214, 1) !important;
+  background-color: rgba(153, 197, 214, 0.654) !important;
 }
 
-.but-p-container, .goback-p {
+.but-p-container, .goback-p, .goback-n, .goback-j {
   display: flex !important;
   flex-direction: row !important;
   justify-content: flex-end !important;
   align-items: flex-end !important;
 }
 
-.goback-p {
+.goback-p, .goback-n, .goback-j {
   background-color: blue !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  /* display: flex !important;
-  align-items: flex-end !important; */
 }
 
 .sidelines-p, .inverted-img-p {
@@ -175,7 +173,7 @@ div.skribilo-body {
   transform: scaleX(-1) !important;
 }
 
-.white-bg {
+.white-bg, .white-bg-n {
   background-color: white !important;
   /* /* width: auto !important; */
   margin: auto !important;
@@ -190,15 +188,25 @@ div.skribilo-body {
 }
 /* ----------------journal page-------------- */
 .journal-base {
-  background-color: wheat !important;
+  background-color: #f2e9ad !important;
   background-image: url("grid3.png") !important;
   background-repeat: repeat !important;
+  border-radius: 10px;
+}
+
+.sidelines-j {
+  background-image: none !important;
+  background-color: transparent !important;
 }
 
 .journal-note {
   background-image: url("notepad-2.png") !important;
   background-size: 100% 100% !important;
   /* background-size: contain !important; */
+}
+
+.goback-j {
+  background-color: #4c2708 !important;
 }
 .note-button {
   margin-right: 7% !important;
@@ -211,6 +219,10 @@ div.skribilo-body {
   align-items: center !important;
   /* background-color: rgba(153, 197, 214, 0.5); */
   line-height: 2rem;
+}
+
+.white-bg-n {
+  color: #4c2708 !important;
 }
 
 .note-area {
@@ -232,6 +244,10 @@ div.skribilo-body {
 
 .align-date {
   float: right;
+}
+
+.goback-n {
+  background-color: lightslategray !important;
 }
 /* ------------------------------------------ */
 
